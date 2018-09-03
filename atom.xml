@@ -18,8 +18,8 @@
   
   <entry>
     <title></title>
-    <link href="http://yoursite.com/2018/09/03/Springboot%20%20%E6%95%B4%E5%90%88mybatis%20%20%E5%88%86%E9%A1%B5%E6%8F%92%E4%BB%B6%20%E5%92%8C%20%E9%80%9A%E7%94%A8Mapper/"/>
-    <id>http://yoursite.com/2018/09/03/Springboot  整合mybatis  分页插件 和 通用Mapper/</id>
+    <link href="http://yoursite.com/2018/09/03/Springboot%E6%95%B4%E5%90%88%E9%80%9A%E7%94%A8Mapper/"/>
+    <id>http://yoursite.com/2018/09/03/Springboot整合通用Mapper/</id>
     <published>2018-09-03T13:17:12.298Z</published>
     <updated>2018-09-03T13:16:45.619Z</updated>
     
@@ -42,28 +42,6 @@
     <title>Dubbo学习总结</title>
     <link href="http://yoursite.com/2018/09/03/Dubbo%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     <id>http://yoursite.com/2018/09/03/Dubbo学习总结/</id>
-    <published>2018-09-03T05:34:32.000Z</published>
-    <updated>2018-09-03T05:49:26.489Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://dubbo.gitbooks.io/dubbo-user-book/content/" target="_blank" rel="noopener"><em>Dubbo文档</em></a></p><h2 id="1、背景"><a href="#1、背景" class="headerlink" title="1、背景"></a>1、背景</h2><blockquote><ul><li>单一应用架构（关键：简化ORM框架）</li><li>垂直应用架构（关键：加速WEB框架（MVC））</li><li>分布式服务架构（将核心业务抽取为服务，形成服务中心关键：提高业务复用，整合分布式服务框架（RPC））</li><li>流动计算架构（当服务增多，需要调度中心管理集群容器，提高利用率，关键：提高机器利用率的调度中心和治理中心（SOA））</li></ul></blockquote><h2 id="2、需求"><a href="#2、需求" class="headerlink" title="2、需求"></a>2、需求</h2><p>未服务化之前，可以通过 RMI 或 Hessian 等工具，简单的暴露和引用远程服务，通过服务的URL地址调用，服务增多后，服务URL配置很难管理，<strong><em>需要一个服务注册中心，动态的注册和发现服务</em></strong></p><p><strong><em>服务间依赖关系错综复杂，需要自动画出应用间的依赖</em></strong></p><p><strong><em>服务的调用变大，服务的容量问题</em></strong></p><h2 id="3、架构思想"><a href="#3、架构思想" class="headerlink" title="3、架构思想"></a>3、架构思想</h2><p><img src="http://dubbo.apache.org/docs/zh-cn/user/sources/images/dubbo-architecture.jpg" alt=""></p><p><strong><em>节点角色说明</em></strong><br>| 节点 | 角色说明 |<br>| :—— | :——: |<br>| Provider | 暴露服务的服务提供方 |<br>| Consumer | 调用远程服务的服务消费方 |<br>| Registry | 服务注册与发现的注册中心 |<br>| Monitor | 统计服务的调用次数和调用时间的监控中心 |<br>| Container | 服务运行容器 |</p><p><strong><em>调用关系说明</em></strong></p><blockquote><ol start="0"><li>服务容器 启动、加载、运行服务提供者</li><li>服务提供者 启动时，向注册中心注册 服务</li><li>服务消费者 启动时，向注册中心订阅 服务</li><li>注册中心返回服务提供者 地址列表给消费者</li><li>从地址列表中通过 软负载均衡算法 选择一个进行调用</li><li>服务消费者和提供者，在内存中累计调用次数和调用时间，定时每分钟发送一些数据到监控中心</li></ol></blockquote><p><a href="https://www.jianshu.com/p/007943cd3b1e" target="_blank" rel="noopener"><strong><em>分布式服务框架Dubbo的架构总结</em></strong></a></p><h2 id="4、快速启动"><a href="#4、快速启动" class="headerlink" title="4、快速启动"></a>4、快速启动</h2><ol><li><a href="http://dubbo.apache.org/zh-cn/docs/user/quick-start.html" target="_blank" rel="noopener">使用 Spirng 配置</a></li><li>利用ali包下 @Service 和 @Reference 注解进行 服务注册和调用<a href="https://github.com/liusxg/springboot-dubbo-zookeeper-demo" target="_blank" rel="noopener"><strong><em>github demo</em></strong></a></li><li><a href="https://github.com/apache/incubator-dubbo-ops" target="_blank" rel="noopener"><strong><em>dubbo-admin 监控</em></strong></a></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://dubbo.gitbooks.io/dubbo-user-book/content/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;em&gt;Dubbo文档&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;1、背景&quot;&gt;&lt;a hre
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Dubbo学习总结</title>
-    <link href="http://yoursite.com/2018/09/03/test/"/>
-    <id>http://yoursite.com/2018/09/03/test/</id>
     <published>2018-09-03T05:34:32.000Z</published>
     <updated>2018-09-03T05:49:26.489Z</updated>
     
