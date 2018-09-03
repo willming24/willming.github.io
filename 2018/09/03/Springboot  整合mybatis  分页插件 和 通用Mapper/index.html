@@ -81,13 +81,21 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="今日完成学习 通用Mapper 和 分页插件 、swaggers 编写 接口文档 通用 Mapper 和 分页插件12345678910111213141516171819########### Mybatis 自身配置 ##########mybatis.mapper-locations=classpath:com/jnshu/mapper/*.xmlmybatis.type-aliases-p">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/09/03/Springboot  整合mybatis  分页插件 和 通用Mapper/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="今日完成学习 通用Mapper 和 分页插件 、swaggers 编写 接口文档 通用 Mapper 和 分页插件12345678910111213141516171819########### Mybatis 自身配置 ##########mybatis.mapper-locations=classpath:com/jnshu/mapper/*.xmlmybatis.type-aliases-p">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5811881-c88221ba256bbc8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12791090-3c744f379d889ccc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12791090-50dc7184e8bfb790.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-09-03T13:16:45.619Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="今日完成学习 通用Mapper 和 分页插件 、swaggers 编写 接口文档 通用 Mapper 和 分页插件12345678910111213141516171819########### Mybatis 自身配置 ##########mybatis.mapper-locations=classpath:com/jnshu/mapper/*.xmlmybatis.type-aliases-p">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/5811881-c88221ba256bbc8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -117,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/03/Springboot  整合mybatis  分页插件 和 通用Mapper/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title> | Hexo</title>
   
 
 
@@ -142,8 +150,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -216,9 +223,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -248,9 +255,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/03/Springboot  整合mybatis  分页插件 和 通用Mapper/" itemprop="url">Untitled</a></h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -300,9 +305,7 @@
       
 
       
-        
-          
-            <h2 id="今日完成"><a href="#今日完成" class="headerlink" title="今日完成"></a>今日完成</h2><p>学习 通用Mapper 和 分页插件 、swaggers 编写 接口文档</p>
+        <h2 id="今日完成"><a href="#今日完成" class="headerlink" title="今日完成"></a>今日完成</h2><p>学习 通用Mapper 和 分页插件 、swaggers 编写 接口文档</p>
 <h4 id="通用-Mapper-和-分页插件"><a href="#通用-Mapper-和-分页插件" class="headerlink" title="通用 Mapper 和 分页插件"></a>通用 Mapper 和 分页插件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">########### Mybatis 自身配置 ##########</span><br><span class="line">mybatis.mapper-locations=classpath:com/jnshu/mapper/*.xml</span><br><span class="line">mybatis.type-aliases-package=com.jnshu.entity</span><br><span class="line">mybatis.configuration.map-underscore-to-camel-case=true</span><br><span class="line"></span><br><span class="line">########### 通用Mapper ##########</span><br><span class="line">## 主键自增回写方法,默认值MYSQL</span><br><span class="line">mapper.i-d-e-n-t-i-t-y=MYSQL</span><br><span class="line">mapper.mappers=com.jnshu.util.MyMapper</span><br><span class="line">## 设置 insert 和 update 中，是否判断字符串类型!=&apos;&apos;</span><br><span class="line">mapper.not-empty=true</span><br><span class="line">## 枚举按简单类型处理</span><br><span class="line">#mapper.enum-as-simple-type=true</span><br><span class="line"></span><br><span class="line">########## 分页插件 ##########</span><br><span class="line">pagehelper.helper-dialect=mysql</span><br><span class="line">pagehelper.params=count=countSql</span><br><span class="line">pagehelper.reasonable=false</span><br><span class="line">pagehelper.support-methods-arguments=true</span><br></pre></td></tr></table></figure>
 <p>使用 MyBatis Generator 自动生成表对应的Model,Mapper以及xml, 该文件位于src/main/resources下面    </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;!DOCTYPE generatorConfiguration</span><br><span class="line">        PUBLIC &quot;-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN&quot;</span><br><span class="line">        &quot;http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd&quot;&gt;</span><br><span class="line">&lt;generatorConfiguration&gt;</span><br><span class="line">    &lt;!--加载配置文件，为下面读取数据库信息准备--&gt;</span><br><span class="line">    &lt;properties resource=&quot;application.properties&quot;/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;context id=&quot;Mysql&quot; targetRuntime=&quot;MyBatis3Simple&quot; defaultModelType=&quot;flat&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;plugin type=&quot;tk.mybatis.mapper.generator.MapperPlugin&quot;&gt;</span><br><span class="line">            &lt;property name=&quot;mappers&quot; value=&quot;com.jnshu.util.MyMapper&quot; /&gt;</span><br><span class="line">            &lt;!--caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true--&gt;</span><br><span class="line">            &lt;property name=&quot;caseSensitive&quot; value=&quot;true&quot;/&gt;</span><br><span class="line">        &lt;/plugin&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 阻止生成自动注释 --&gt;</span><br><span class="line">        &lt;commentGenerator&gt;</span><br><span class="line">            &lt;property name=&quot;javaFileEncoding&quot; value=&quot;UTF-8&quot;/&gt;</span><br><span class="line">            &lt;property name=&quot;suppressDate&quot; value=&quot;true&quot;/&gt;</span><br><span class="line">            &lt;property name=&quot;suppressAllComments&quot; value=&quot;true&quot;/&gt;</span><br><span class="line">        &lt;/commentGenerator&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--数据库链接地址账号密码--&gt;</span><br><span class="line">        &lt;jdbcConnection driverClass=&quot;$&#123;spring.datasource.driver-class-name&#125;&quot;</span><br><span class="line">                        connectionURL=&quot;$&#123;spring.datasource.url&#125;&quot;</span><br><span class="line">                        userId=&quot;$&#123;spring.datasource.username&#125;&quot;</span><br><span class="line">                        password=&quot;$&#123;spring.datasource.password&#125;&quot;&gt;</span><br><span class="line">        &lt;/jdbcConnection&gt;</span><br><span class="line"></span><br><span class="line">        &lt;javaTypeResolver&gt;</span><br><span class="line">            &lt;property name=&quot;forceBigDecimals&quot; value=&quot;false&quot;/&gt;</span><br><span class="line">        &lt;/javaTypeResolver&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--生成Model类存放位置--&gt;</span><br><span class="line">        &lt;javaModelGenerator targetPackage=&quot;com.jnshu.domain&quot; targetProject=&quot;src/main/java&quot;&gt;</span><br><span class="line">            &lt;property name=&quot;enableSubPackages&quot; value=&quot;true&quot;/&gt;</span><br><span class="line">            &lt;property name=&quot;trimStrings&quot; value=&quot;true&quot;/&gt;</span><br><span class="line">        &lt;/javaModelGenerator&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--生成映射文件存放位置--&gt;</span><br><span class="line">        &lt;sqlMapGenerator targetPackage=&quot;mapper&quot; targetProject=&quot;src/main/resources&quot;&gt;</span><br><span class="line">            &lt;property name=&quot;enableSubPackages&quot; value=&quot;true&quot;/&gt;</span><br><span class="line">        &lt;/sqlMapGenerator&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--生成Dao类存放位置--&gt;</span><br><span class="line">        &lt;!-- 客户端代码，生成易于使用的针对Model对象和XML配置文件 的代码</span><br><span class="line">                type=&quot;ANNOTATEDMAPPER&quot;,生成Java Model 和基于注解的Mapper对象</span><br><span class="line">                type=&quot;XMLMAPPER&quot;,生成SQLMap XML文件和独立的Mapper接口</span><br><span class="line">        --&gt;</span><br><span class="line">        &lt;javaClientGenerator type=&quot;XMLMAPPER&quot; targetPackage=&quot;com.jnshu.dao&quot; targetProject=&quot;src/main/java&quot;&gt;</span><br><span class="line">            &lt;property name=&quot;enableSubPackages&quot; value=&quot;true&quot;/&gt;</span><br><span class="line">        &lt;/javaClientGenerator&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--生成对应表及类名</span><br><span class="line">        去掉Mybatis Generator生成的一堆 example</span><br><span class="line">        --&gt;</span><br><span class="line">        &lt;table tableName=&quot;student_info&quot; domainObjectName=&quot;StudentInfo&quot; enableCountByExample=&quot;false&quot;</span><br><span class="line">               enableUpdateByExample=&quot;false&quot; enableDeleteByExample=&quot;false&quot; enableSelectByExample=&quot;false&quot; selectByExampleQueryId=&quot;false&quot;&gt;</span><br><span class="line">            &lt;generatedKey column=&quot;id&quot; sqlStatement=&quot;Mysql&quot; identity=&quot;true&quot;/&gt;</span><br><span class="line">        &lt;/table&gt;</span><br><span class="line">    &lt;/context&gt;</span><br><span class="line">&lt;/generatorConfiguration&gt;</span><br></pre></td></tr></table></figure>
@@ -321,8 +324,6 @@
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">@Configuration</span><br><span class="line">@EnableSwagger2</span><br><span class="line">public class Swagger2 &#123;</span><br><span class="line">    @Bean</span><br><span class="line">    public Docket createRestApi() &#123;</span><br><span class="line">        return new Docket(DocumentationType.SWAGGER_2)</span><br><span class="line">                .apiInfo(apiInfo())</span><br><span class="line">                .select()</span><br><span class="line">                .apis(RequestHandlerSelectors.basePackage(&quot;com.didispace.web&quot;))</span><br><span class="line">                .paths(PathSelectors.any())</span><br><span class="line">                .build();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private ApiInfo apiInfo() &#123;</span><br><span class="line">        return new ApiInfoBuilder()</span><br><span class="line">                .title(&quot;Spring Boot中使用Swagger2构建RESTful APIs&quot;)</span><br><span class="line">                .description(&quot;接口 文档&quot;)</span><br><span class="line">                .termsOfServiceUrl(&quot;http://localhost:8080/students&quot;)</span><br><span class="line">                .contact(&quot;Lee&quot;)</span><br><span class="line">                .version(&quot;1.0&quot;)</span><br><span class="line">                .build();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -339,162 +340,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/03/Dubbo学习总结/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/03/Dubbo学习总结/" itemprop="url">Dubbo学习总结</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-03T13:34:32+08:00">
-                2018-09-03
-              </time>
+              <a href="/2018/09/03/Dubbo学习总结/" rel="next" title="Dubbo学习总结">
+                <i class="fa fa-chevron-left"></i> Dubbo学习总结
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p><a href="https://dubbo.gitbooks.io/dubbo-user-book/content/" target="_blank" rel="noopener"><em>Dubbo文档</em></a></p>
-<h2 id="1、背景"><a href="#1、背景" class="headerlink" title="1、背景"></a>1、背景</h2><blockquote>
-<ul>
-<li>单一应用架构（关键：简化ORM框架）</li>
-<li>垂直应用架构（关键：加速WEB框架（MVC））</li>
-<li>分布式服务架构（将核心业务抽取为服务，形成服务中心关键：提高业务复用，整合分布式服务框架（RPC））</li>
-<li>流动计算架构（当服务增多，需要调度中心管理集群容器，提高利用率，关键：提高机器利用率的调度中心和治理中心（SOA））</li>
-</ul>
-</blockquote>
-<h2 id="2、需求"><a href="#2、需求" class="headerlink" title="2、需求"></a>2、需求</h2><p>未服务化之前，可以通过 RMI 或 Hessian 等工具，简单的暴露和引用远程服务，通过服务的URL地址调用，服务增多后，服务URL配置很难管理，<strong><em>需要一个服务注册中心，动态的注册和发现服务</em></strong></p>
-<p><strong><em>服务间依赖关系错综复杂，需要自动画出应用间的依赖</em></strong></p>
-<p><strong><em>服务的调用变大，服务的容量问题</em></strong></p>
-<h2 id="3、架构思想"><a href="#3、架构思想" class="headerlink" title="3、架构思想"></a>3、架构思想</h2><p><img src="http://dubbo.apache.org/docs/zh-cn/user/sources/images/dubbo-architecture.jpg" alt=""></p>
-<p><strong><em>节点角色说明</em></strong><br>| 节点 | 角色说明 |<br>| :—— | :——: |<br>| Provider | 暴露服务的服务提供方 |<br>| Consumer | 调用远程服务的服务消费方 |<br>| Registry | 服务注册与发现的注册中心 |<br>| Monitor | 统计服务的调用次数和调用时间的监控中心 |<br>| Container | 服务运行容器 |</p>
-<p><strong><em>调用关系说明</em></strong></p>
-<blockquote>
-<ol start="0">
-<li>服务容器 启动、加载、运行服务提供者</li>
-<li>服务提供者 启动时，向注册中心注册 服务</li>
-<li>服务消费者 启动时，向注册中心订阅 服务</li>
-<li>注册中心返回服务提供者 地址列表给消费者</li>
-<li>从地址列表中通过 软负载均衡算法 选择一个进行调用</li>
-<li>服务消费者和提供者，在内存中累计调用次数和调用时间，定时每分钟发送一些数据到监控中心</li>
-</ol>
-</blockquote>
-<p><a href="https://www.jianshu.com/p/007943cd3b1e" target="_blank" rel="noopener"><strong><em>分布式服务框架Dubbo的架构总结</em></strong></a></p>
-<h2 id="4、快速启动"><a href="#4、快速启动" class="headerlink" title="4、快速启动"></a>4、快速启动</h2><ol>
-<li><a href="http://dubbo.apache.org/zh-cn/docs/user/quick-start.html" target="_blank" rel="noopener">使用 Spirng 配置</a></li>
-<li>利用ali包下 @Service 和 @Reference 注解进行 服务注册和调用<a href="https://github.com/liusxg/springboot-dubbo-zookeeper-demo" target="_blank" rel="noopener"><strong><em>github demo</em></strong></a></li>
-<li><a href="https://github.com/apache/incubator-dubbo-ops" target="_blank" rel="noopener"><strong><em>dubbo-admin 监控</em></strong></a></li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -504,288 +371,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/03/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/03/test/" itemprop="url">Dubbo学习总结</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-03T13:34:32+08:00">
-                2018-09-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="https://dubbo.gitbooks.io/dubbo-user-book/content/" target="_blank" rel="noopener"><em>Dubbo文档</em></a></p>
-<h2 id="1、背景"><a href="#1、背景" class="headerlink" title="1、背景"></a>1、背景</h2><blockquote>
-<ul>
-<li>单一应用架构（关键：简化ORM框架）</li>
-<li>垂直应用架构（关键：加速WEB框架（MVC））</li>
-<li>分布式服务架构（将核心业务抽取为服务，形成服务中心关键：提高业务复用，整合分布式服务框架（RPC））</li>
-<li>流动计算架构（当服务增多，需要调度中心管理集群容器，提高利用率，关键：提高机器利用率的调度中心和治理中心（SOA））</li>
-</ul>
-</blockquote>
-<h2 id="2、需求"><a href="#2、需求" class="headerlink" title="2、需求"></a>2、需求</h2><p>未服务化之前，可以通过 RMI 或 Hessian 等工具，简单的暴露和引用远程服务，通过服务的URL地址调用，服务增多后，服务URL配置很难管理，<strong><em>需要一个服务注册中心，动态的注册和发现服务</em></strong></p>
-<p><strong><em>服务间依赖关系错综复杂，需要自动画出应用间的依赖</em></strong></p>
-<p><strong><em>服务的调用变大，服务的容量问题</em></strong></p>
-<h2 id="3、架构思想"><a href="#3、架构思想" class="headerlink" title="3、架构思想"></a>3、架构思想</h2><p><img src="http://dubbo.apache.org/docs/zh-cn/user/sources/images/dubbo-architecture.jpg" alt=""></p>
-<p><strong><em>节点角色说明</em></strong><br>| 节点 | 角色说明 |<br>| :—— | :——: |<br>| Provider | 暴露服务的服务提供方 |<br>| Consumer | 调用远程服务的服务消费方 |<br>| Registry | 服务注册与发现的注册中心 |<br>| Monitor | 统计服务的调用次数和调用时间的监控中心 |<br>| Container | 服务运行容器 |</p>
-<p><strong><em>调用关系说明</em></strong></p>
-<blockquote>
-<ol start="0">
-<li>服务容器 启动、加载、运行服务提供者</li>
-<li>服务提供者 启动时，向注册中心注册 服务</li>
-<li>服务消费者 启动时，向注册中心订阅 服务</li>
-<li>注册中心返回服务提供者 地址列表给消费者</li>
-<li>从地址列表中通过 软负载均衡算法 选择一个进行调用</li>
-<li>服务消费者和提供者，在内存中累计调用次数和调用时间，定时每分钟发送一些数据到监控中心</li>
-</ol>
-</blockquote>
-<p><a href="https://www.jianshu.com/p/007943cd3b1e" target="_blank" rel="noopener"><strong><em>分布式服务框架Dubbo的架构总结</em></strong></a></p>
-<h2 id="4、快速启动"><a href="#4、快速启动" class="headerlink" title="4、快速启动"></a>4、快速启动</h2><ol>
-<li><a href="http://dubbo.apache.org/zh-cn/docs/user/quick-start.html" target="_blank" rel="noopener">使用 Spirng 配置</a></li>
-<li>利用ali包下 @Service 和 @Reference 注解进行 服务注册和调用<a href="https://github.com/liusxg/springboot-dubbo-zookeeper-demo" target="_blank" rel="noopener"><strong><em>github demo</em></strong></a></li>
-<li><a href="https://github.com/apache/incubator-dubbo-ops" target="_blank" rel="noopener"><strong><em>dubbo-admin 监控</em></strong></a></li>
-</ol>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/01/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/01/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-01T23:38:47+08:00">
-                2018-09-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -793,6 +383,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -813,8 +407,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -863,6 +466,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#今日完成"><span class="nav-number">1.</span> <span class="nav-text">今日完成</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#通用-Mapper-和-分页插件"><span class="nav-number">1.0.1.</span> <span class="nav-text">通用 Mapper 和 分页插件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#编写-通用-接口-Iservice"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">编写 通用 接口 Iservice</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#编写-controller"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">编写 controller</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#swagger-2"><span class="nav-number">1.1.</span> <span class="nav-text">swagger 2</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建Swagger2配置类"><span class="nav-number">1.1.1.</span> <span class="nav-text">创建Swagger2配置类</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -996,6 +615,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
